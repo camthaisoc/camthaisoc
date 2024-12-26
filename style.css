@@ -1,0 +1,73 @@
+:root {
+    --lemon-yellow: #f8f6a3;
+    --brown-heading: rgb(88, 38, 0);
+    --brown-body: rgb(121, 74, 27);
+    --cream-heading: #efb86c;
+    --cream-body: #f1c688;
+}
+
+#title-container {
+    background:
+        linear-gradient(to bottom, rgba(33, 33, 33, 0.6) 92%, var(--cream-body) 100%),
+        url('img/picnic.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-attachment: scroll, fixed;
+    height: 100vh;
+    position: relative;
+}
+
+#title {
+    bottom: 25%;
+    left: 15%;
+    position: absolute;
+}
+
+.slot {
+    background-color: var(--cream-body);
+    color: var(--brown-body);
+}
+
+
+.slot-alt {
+    background-color: var(--brown-heading);
+    color: var(--cream-body);
+}
+
+#img-interlude-1 {
+    height: 100vh;
+    background:
+        linear-gradient(to bottom, var(--cream-body) 0%, rgba(0,0,0,0) 15%, rgba(0,0,0,0) 85%, var(--brown-heading) 100%),
+        url('img/karaoke.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-attachment: scroll, fixed;
+}
+
+#img-interlude-2 {
+    height: 100vh;
+    background:
+        linear-gradient(to bottom, var(--brown-heading) 0%, rgba(0,0,0,0) 15%, rgba(0,0,0,0) 85%, var(--cream-body) 100%),
+        url('img/halloween.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-attachment: scroll, fixed;
+}
+
+#img-interlude-3 {
+    height: 100vh;
+    background:
+        linear-gradient(to bottom, var(--cream-body) 0%, rgba(0,0,0,0) 15%, rgba(0,0,0,0) 85%, var(--brown-heading) 100%),
+        url('img/oxbridge.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-attachment: scroll, fixed;
+}
+
+a:hover {
+    color: var(--cream-heading) !important;
+}
+
+a {
+    color: var(--cream-body) !important;
+}
