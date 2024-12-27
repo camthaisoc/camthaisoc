@@ -37,38 +37,32 @@
 /* TODO: make img-interlude a class to avoid repeating image properties */
 #img-interlude-1 {
     height: 100vh;
-    min-height: -webkit-fill-available;  /* Fixes the iOS Safari vh issue */
     background:
         linear-gradient(to bottom, var(--secondary-body) 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 70%, var(--primary-heading) 100%),
         url('img/karaoke.jpg');
     background-size: cover, cover;
     background-position: 50% 50%;
     background-attachment: scroll, fixed;
-    -webkit-background-size: cover, cover;  /* Add webkit prefix for Safari */
 }
 
 #img-interlude-2 {
     height: 100vh;
-    min-height: -webkit-fill-available;  /* Fixes the iOS Safari vh issue */
     background:
         linear-gradient(to bottom, var(--primary-heading) 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 70%, var(--secondary-body) 100%),
         url('img/punting.jpg');
     background-size: cover, cover;
     background-position: 50% 50%;
     background-attachment: scroll, fixed;
-    -webkit-background-size: cover, cover;  /* Add webkit prefix for Safari */
 }
 
 #img-interlude-3 {
     height: 100vh;
-    min-height: -webkit-fill-available;  /* Fixes the iOS Safari vh issue */
     background:
         linear-gradient(to bottom, var(--secondary-body) 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 70%, var(--primary-heading) 100%),
         url('img/oxbridge.jpg');
     background-size: cover, cover;
     background-position: 50% 50%;
     background-attachment: scroll, fixed;
-    -webkit-background-size: cover, cover;  /* Add webkit prefix for Safari */
 }
 
 a:hover {
@@ -77,4 +71,10 @@ a:hover {
 
 a {
     color: var(--secondary-body) !important;
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+    #img-interlude-1 {
+        background-attachment: scroll, scroll; /* Disable fixed on iOS */
+    }
 }
