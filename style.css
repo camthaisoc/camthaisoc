@@ -74,7 +74,7 @@ a {
 }
 
 @supports (-webkit-overflow-scrolling: touch) {
-    #img-interlude-1 {
-        background-attachment: scroll, scroll; /* Disable fixed on iOS */
+    #title-container, #img-interlude-1, #img-interlude-2, #img-interlude-3 {
+        background-attachment: scroll, scroll;  /* Disable fixed on iOS because it doesn't work :( */
     }
 }
