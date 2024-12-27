@@ -10,7 +10,7 @@
     background:
         linear-gradient(to bottom, rgba(33, 33, 33, 0.6) 90%, var(--secondary-body) 100%),
         url('img/picnic.jpg');
-    background-size: cover;
+    background-size: cover, cover;
     background-position: 50% 50%;
     background-attachment: scroll, fixed;
     height: 100vh;
@@ -39,7 +39,7 @@
     background:
         linear-gradient(to bottom, var(--secondary-body) 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 70%, var(--primary-heading) 100%),
         url('img/karaoke.jpg');
-    background-size: cover;
+    background-size: cover, cover;
     background-position: 50% 50%;
     background-attachment: scroll, fixed;
 }
@@ -48,8 +48,8 @@
     height: 100vh;
     background:
         linear-gradient(to bottom, var(--primary-heading) 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 70%, var(--secondary-body) 100%),
-        url('img/halloween.jpg');
-    background-size: cover;
+        url('img/punting.jpg');
+    background-size: cover, cover;
     background-position: 50% 50%;
     background-attachment: scroll, fixed;
 }
@@ -59,7 +59,7 @@
     background:
         linear-gradient(to bottom, var(--secondary-body) 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 70%, var(--primary-heading) 100%),
         url('img/oxbridge.jpg');
-    background-size: cover;
+    background-size: cover, cover;
     background-position: 50% 50%;
     background-attachment: scroll, fixed;
 }
